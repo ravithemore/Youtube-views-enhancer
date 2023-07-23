@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube View Enhancer</title>
+  <link rel="stylesheet" href="../selfCss/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../selfCss/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../icons/128YT.png">
+
+
+</head>
+<body>
+<body class="bg-light">
+
+<div class="container">
+  <div class="py-5 text-center yt-red">
+    <h2><i class="fa fa-youtube fa-4x" aria-hidden="true"></i></h2>
+  </div>
+  
+  <div class="row">
+    <!--right side ka samaan-->
+    <!--samaan on the left side -->
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" novalidate>
+        
+        <div class="mb-3">
+          <label for="videoLink">Youtube Video Link/URL</label>
+            <input type="text" class="form-control" id="videoLink" placeholder="https://youtu.be/OpkD9-7idMQ" required>
+          <div class="invalid-feedback">
+            Please enter a valid URL.
+          </div>
+        </div>
+        <div class="row">
+    
+          <div class="col-md-4 mb-3">
+            <label for="videoDuration">Video Duration</label>
+            <input type="text" class="form-control" id="videoDuration" placeholder="Convert into seconds" value="" required>
+            <div class="invalid-feedback">
+              A valid duration is required
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="vTabs">No. of tabs</label>
+            <input type="text" class="form-control" id="vTabs" placeholder="Integer (<5)" value="" required>
+            <div class="invalid-feedback">
+              A valid no. is required
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-3">
+            <label for="frequency">Frequency</label>
+            <input type="text" class="form-control" id="frequency" placeholder="Integer (Large Value Preferably)" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+  
+        </div>
+        
+        <button class="btn btn-danger btn-lg btn-block mt-5" type="submit" id="beginButton">Begin</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; Made by <a href="https://github.com/shikhar-scs">shikhar-scs</a> <i class="fa fa-heart" aria-hidden="true"></i></p>
+  </footer>
+</div>
+</body>
+<script src="../selfJs/mainJs.js"></script>
+<script src="../selfJs/jquery-3.2.1.js"></script>
+</html>
